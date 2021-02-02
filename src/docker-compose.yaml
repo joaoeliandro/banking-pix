@@ -13,10 +13,10 @@ services:
     volumes:
       - .pgdata:/var/lib/postgresql/data
     environment:
-      - POSTGRES_PASSWORD=root
-      - POSTGRES_DB=codepix
+      - POSTGRES_PASSWORD=docker
+      - POSTGRES_DB=bankingpix
     ports:
-      - "5432:5432"
+      - "5433:5432"
 
   zookeeper:
     image: confluentinc/cp-zookeeper:latest
