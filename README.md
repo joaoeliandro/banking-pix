@@ -54,7 +54,7 @@
 
 ## :octocat: The Project
 
-In addition to being able to work with a [gRPC][gRPC] server, it consumes and publishes messages on [Apache Kafka][ApacheKafka], with simultaneous operations when running the service. It works with a design focused on solving the domain problem and leaves the technical complexity to the "application layer", responsible for the [gRPC][gRPC] and [Kafka][ApacheKafka] server. It is also flexible for implementing other communication formats, such as API Rest, CLI clients, etc. Without changing any application component or domain model 
+Made with Hexagonal Architecture/Ports and Adapters, in addition to being able to work with a [gRPC][gRPC] server, it consumes and publishes messages on [Apache Kafka][ApacheKafka], with simultaneous operations when running the service. It works with a design focused on solving the domain problem and leaves the technical complexity to the "application layer", responsible for the [gRPC][gRPC] and [Kafka][ApacheKafka] server. It is also flexible for implementing other communication formats, such as API Rest, CLI clients, etc. Without changing any application component or domain model 
 
 ---
 
