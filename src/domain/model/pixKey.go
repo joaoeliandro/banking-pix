@@ -10,7 +10,7 @@ import (
 )
 
 type PixKeyRepositoryInterface interface {
-	Register(pixkey *PixKey) (*PixKey, error)
+	RegisterKey(pixkey *PixKey) (*PixKey, error)
 	FindKeyByKind(key string, kind string) (*PixKey, error)
 	AddBank(bank *Bank) error
 	AddAccount(account *Account) error
@@ -18,11 +18,12 @@ type PixKeyRepositoryInterface interface {
 }
 
 type PixKey struct {
-	Base    `valid:"required"`
-	Kind    string   `json:"kind" valid:"notnull"`
-	Key     string   `json:"key" valid:"notnull"`
-	Account *Account `valid:"-"`
-	Status  string   `json:"status" valid:"notnull"`
+	Base      `valid:"required"`
+	Kind      string   `json:"kind" gorm:"type:varchar(20)" valid:"notnull"`
+	Key       string   `json:"key" gorm:"type:varchar(50)" valid:"notnull"`
+	Account   *Account `valid:"-"`
+	AccountID string   `gorm:"column:account_id;type:uuid;notnull" valid:"-"`
+	Status    string   `json:"status" gorm:"type:varchar(20)" valid:"notnull"`
 }
 
 func (pixKey *PixKey) isValid() error {
