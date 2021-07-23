@@ -14,7 +14,7 @@
   <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/joaoeliandro/banking-pix-microservice.svg">
 
   <a href="https://www.codacy.com/app/joaoeliandro/banking-pix-microservice?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=joaoeliandro/banking-pix-microservice&amp;utm_campaign=Badge_Grade">
-    <img alt="Codacy grade" src="https://api.codacy.com/project/badge/Grade/691b85e51bf240b997ae6ff82ea41590">
+    <img alt="Codacy grade" src="https://api.codacy.com/project/badge/Grade/8d84bd4692454be6b0554023244a5c15">
   </a>
 
   <img alt="Repository size" src="https://img.shields.io/github/repo-size/joaoeliandro/banking-pix-microservice.svg">
